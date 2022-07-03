@@ -1,0 +1,72 @@
+.form {
+	display: flex;
+	background: #FFFFFF;
+	box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.22);
+	border-radius: 29px;
+	width: 457px;
+	height: 58px;
+
+	&--active {
+		box-shadow: 0 17px 42px rgba(247, 132, 52, 0.33);
+	}
+
+	@include frd.desktop1024-d {
+		width: 378px;
+	}
+
+	@include frd.mobile480-d {
+		max-width: 300px;
+		height: 35px;
+		position: relative;
+	}
+}
+
+.form__label {
+	position: relative;
+	display: flex;
+
+	height: 100%;
+	padding-left: 69px;
+
+	&::before {
+		position: absolute;
+		top: 21px;
+		left: 27px;
+		content: '';
+		display: block;
+		width: 24px;
+		height: 19px;
+		background-image: url(./../img/icons/mail.svg);
+
+		@include frd.desktop1024-d {
+			left: 18px;
+		}
+
+		@include frd.mobile480-d {
+			top: 8px;
+			font-size: 24px;
+		}
+	}
+
+	@include frd.desktop1024-d {
+		padding-left: 53px;
+		width: 68%;
+	}
+}
+
+.form__input {
+	margin-right: 26px;
+
+	&::placeholder {
+		color: #bbbbbb;
+	}
+
+	@include frd.desktop1024-d {
+		font-size: 14px;
+		margin-right: 7px;
+	}
+
+	@include frd.mobile480-d {
+		margin: 0;
+	}
+}

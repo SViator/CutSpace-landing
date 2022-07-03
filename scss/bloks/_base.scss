@@ -1,0 +1,47 @@
+html,
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 1.687;
+	color: frd.$dark-color;
+
+	p {
+		letter-spacing: 1.15px;
+
+		@include frd.desktop1024-d {
+			font-size: 14px;
+			letter-spacing: normal;
+		}
+
+		@include frd.mobile480-d {
+			font-size: 13px;
+		}
+	}
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+	&--fluid {
+		max-width: unset;
+		width: 100%;
+	}
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.visually-hidden {
+	opacity: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	display: block;
+	margin-left: -1000000px;
+	background: transparent;
+	font-size: 0;
+}

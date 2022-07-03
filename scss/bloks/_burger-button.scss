@@ -1,0 +1,64 @@
+.burger-button {
+	position: relative;
+	z-index: 19;
+	width: 30px;
+	height: 30px;
+	background-color: frd.$accent-color;
+	border-radius: 5px;
+	cursor: pointer;
+	display: none;
+	transition: background-color 0.18s ease-in;
+
+	&:hover {
+		background-color: frd.$accent-color-hover;
+	}
+
+	@include frd.tablet768-d {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.burger__line {
+	position: relative;
+	width: 22px;
+	height: 3px;
+	background-color: white;
+
+	.burger-button.burger-button--active & {
+		background-color: transparent;
+	}
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: -7px;
+		width: 22px;
+		height: 3px;
+		background-color: white;
+
+		.burger-button.burger-button--active & {
+			transform: rotate(45deg);
+			top: 0;
+			transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+		}
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		top: 7px;
+		width: 22px;
+		height: 3px;
+		background-color: white;
+
+		.burger-button.burger-button--active & {
+			transform: rotate(-45deg);
+			top: 0;
+			transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+		}
+	}
+
+
+}

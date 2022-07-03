@@ -1,0 +1,155 @@
+.contact {
+	margin-top: 84px;
+	padding-top: 162px;
+	padding-bottom: 1px;
+
+	color: white;
+	background: url(./../img/contacts/bg.svg) center no-repeat;
+
+	@include frd.desktop1280-d {
+		padding-bottom: 0;
+	}
+
+	@include frd.tablet768-d {
+		margin-top: 60px;
+	}
+
+	@include frd.cust-d (481px) {
+		margin-top: 0;
+	}
+
+	@include frd.mobile450-d {
+		padding-top: 130px;
+	}
+
+	@include frd.mobile320-d {
+		padding-top: 100px;
+	}
+}
+
+.wrap {
+	display: flex;
+
+	@include frd.cust-d (481px) {
+		padding-bottom: 100px;
+	}
+
+	@include frd.tablet720-d {
+		flex-direction: column;
+	}
+
+	@include frd.mobile450-d {
+		padding-bottom: 72px;
+	}
+}
+
+.contact__info {
+	// width: 533px;
+	margin-top: -3px;
+	margin-bottom: 55px;
+	display: inline-block;
+
+	@include frd.mobile450-d {
+		width: 270px;
+	}
+}
+
+.contact__title {
+	max-width: 359px;
+	margin-bottom: 15px;
+}
+
+.contact__description {
+	max-width: 342px;
+	margin-bottom: 29px;
+}
+
+.img-wrapper {
+	position: relative;
+	left: 174px;
+
+	@include frd.tablet768-d {
+		left: 135px;
+	}
+
+	@include frd.tablet720-d {
+		align-self: center;
+	}
+
+	@include frd.cust-d (481px) {
+		bottom: -63px;
+	}
+
+	@include frd.mobile480-d {
+		bottom: -72px;
+	}
+
+	@include frd.mobile450-d {}
+}
+
+.contact__img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 5;
+
+	width: 33.19vw;
+
+	@include frd.desktop1440-u {
+		width: 478px;
+	}
+
+	@include frd.desktop1600-u {
+		left: 98px;
+	}
+
+	@include frd.desktop1024-d {
+		width: 33.19vw;
+		left: -100px;
+	}
+
+	@include frd.tablet768-d {
+		width: 40vw;
+		left: -110px;
+	}
+
+	@include frd.tablet720-d {
+		width: 38vw;
+		left: -111px;
+	}
+
+	@include frd.cust-d (481px) {
+		width: 42vw;
+		left: -125px;
+	}
+
+	// @include frd.mobile450-d {
+	// 	width: 100%;
+	// }
+}
+
+.contact__img--bgnd {
+	position: absolute;
+	bottom: 0;
+	left: -80px;
+	z-index: 3;
+
+	width: 51.59vw;
+
+	@include frd.desktop1440-u {
+		width: 743px;
+	}
+
+	@include frd.desktop1024-d {
+		left: -212px;
+	}
+
+	@include frd.tablet768-d {
+		left: -178px;
+	}
+
+	@include frd.cust-d (481px) {
+		width: 60vw;
+		left: -196px;
+	}
+}

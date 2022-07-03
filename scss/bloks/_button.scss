@@ -1,0 +1,55 @@
+.button {
+	display: inline-block;
+	width: 172px;
+	height: 58px;
+	border-radius: 29px;
+	background-color: frd.$accent-color;
+
+	line-height: 60px;
+	font-weight: 700;
+	text-align: center;
+	color: #ffffff;
+	transition: background-color 0.18s ease-in;
+
+	&:hover {
+		background-color: frd.$accent-color-hover;
+	}
+
+	&--form {
+		width: 157px;
+	}
+
+	&--white-black {
+		color: frd.$dark-color;
+		background-color: #ffffff;
+
+		&:hover {
+			color: #ffffff;
+			background-color: frd.$dark-color;
+		}
+	}
+
+	&--play {
+		position: relative;
+		padding-left: 20px;
+
+		&::before {
+			position: absolute;
+			top: 24px;
+			left: 30px;
+
+			content: '';
+			width: 12px;
+			height: 12px;
+			background-image: url('./../img/icons/play.svg');
+			background-repeat: no-repeat;
+		}
+	}
+
+	&--serve {
+		background-color: frd.$accent-color;
+		color: #fff;
+	}
+
+
+}

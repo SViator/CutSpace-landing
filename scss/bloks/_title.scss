@@ -1,0 +1,22 @@
+.title {
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.476;
+	letter-spacing: 0.8px;
+
+	@include frd.desktop1280-d {
+		font-size: 38px;
+	}
+
+	@include frd.tablet768-d {
+		font-size: 35px;
+	}
+
+	@include frd.mobile480-d {
+		font-size: 30px;
+	}
+
+	@include frd.mobile320-d {
+		font-size: 28px;
+	}
+}

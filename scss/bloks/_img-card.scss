@@ -1,0 +1,54 @@
+.img-card {
+	position: relative;
+	width: 385px;
+
+	@include frd.desktop1280-d {
+		max-width: 340px;
+	}
+
+	@include frd.desktop1024-d {
+		max-width: 290px;
+	}
+}
+
+.img-card__img {
+	border-radius: 20px 20px 0 20px;
+
+	@include frd.desktop1280-d {
+		border-radius: 20px 20px 0 0;
+	}
+
+	.img-card--rounder & {
+		border-radius: 20px;
+
+		@include frd.desktop1280-d {
+			border-radius: 20px 20px 0 0;
+		}
+
+		@include frd.tablet768-d {
+			border-radius: 20px;
+		}
+	}
+}
+
+.img-card__info {
+	position: absolute;
+	right: -46px;
+	bottom: 87px;
+
+	@include frd.desktop1280-d {
+		right: unset;
+		left: -170px;
+		bottom: 150px;
+	}
+
+	@include frd.desktop1024-d {
+		left: -210px;
+		bottom: 100px;
+	}
+
+	@include frd.tablet768-d {
+		left: 15px;
+		bottom: -60px;
+	}
+}

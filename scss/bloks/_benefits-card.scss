@@ -1,0 +1,60 @@
+.benefits-card {
+
+	&:hover {
+		circle {
+			fill: frd.$accent-color;
+		}
+
+		path {
+			fill: white;
+		}
+
+		ellipse {
+			fill: white;
+		}
+	}
+
+	@include frd.tablet768-d {
+		max-width: 285px;
+	}
+}
+
+.benefits__h3 {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+
+	margin-bottom: 2px;
+
+	@include frd.desktop1280-d {
+		font-size: 25px;
+	}
+
+	@include frd.tablet768-d {
+		font-size: 21px;
+	}
+
+	@include frd.mobile480-d {
+		font-size: 19px;
+	}
+}
+
+.benefits-card__icon {
+	margin-bottom: 6px;
+
+	circle {
+		fill: rgba(88, 190, 191, 0.2);
+		transition: fill 0.18s ease-in;
+	}
+
+	path {
+		fill: frd.$logo-color;
+		transition: fill 0.18s ease-in;
+	}
+
+	ellipse {
+		fill: frd.$logo-color;
+		transition: fill 0.18s ease-in;
+	}
+}

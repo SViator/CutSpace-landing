@@ -1,0 +1,154 @@
+.header {
+	padding-bottom: 50px;
+
+	@include frd.desktop1024-d {
+		padding-bottom: 4vw;
+	}
+
+	@include frd.tablet720-d {
+		padding-bottom: 50px;
+	}
+}
+
+.header__row {
+	display: flex;
+	justify-content: space-between;
+
+	@include frd.tablet720-d {
+		position: relative;
+	}
+}
+
+.header__text {
+	max-width: 467px;
+	padding-top: 127px;
+
+	@include frd.desktop1024-d {
+		max-width: 45.94vw;
+		padding-top: 4vw;
+	}
+
+	@include frd.tablet720-d {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		max-width: 400px;
+		height: 600px;
+		margin-top: 50px;
+	}
+
+	@include frd.mobile480-d {
+		max-width: 300px;
+		height: unset;
+	}
+}
+
+.header__title {
+	position: relative;
+
+	margin-right: -160px;
+	margin-bottom: 27px;
+
+	font-weight: 700;
+	font-size: 54px;
+	line-height: 1.46;
+	letter-spacing: 0.8px;
+
+	@include frd.desktop1024-d {
+		font-size: 5.21vw;
+		margin-bottom: 20px;
+	}
+
+	@include frd.tablet768-d {
+		position: static;
+		margin-right: -80px;
+		font-size: 34px;
+	}
+
+	@include frd.tablet720-d {
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+
+	@include frd.mobile480-d {
+		font-size: 32px;
+	}
+}
+
+.header__p {
+	margin-bottom: 42px;
+
+	@include frd.desktop1024-d {
+		margin-bottom: 70px;
+	}
+
+	@include frd.tablet768-d {
+		margin-bottom: 30px;
+	}
+
+	@include frd.tablet720-d {
+		margin-bottom: 140px;
+	}
+
+	@include frd.mobile480-d {
+		margin-bottom: 20px;
+	}
+}
+
+.header__img {
+	img {
+		border-radius: 40px 40px 40px 0;
+
+		@include frd.tablet720-d {
+			border-radius: 40px 40px 0 0;
+		}
+	}
+
+	@include frd.desktop1280-d {
+		max-width: 700px;
+	}
+
+	@include frd.desktop1024-d {
+		width: 42.8vw;
+	}
+
+	@include frd.tablet720-d {
+		position: absolute;
+		z-index: -1;
+		left: 50%;
+		transform: translateX(-50%);
+
+		width: 480px;
+		opacity: 0.55;
+	}
+
+	@include frd.mobile480-d {
+		width: 319px;
+	}
+}
+
+.header__form {
+	@include frd.mobile320-d {
+		max-width: 250px;
+	}
+}
+
+.header__button {
+	@include frd.mobile480-d {
+		position: absolute;
+		top: 50px;
+		left: 81px;
+
+		width: 130px;
+		height: 40px;
+
+		line-height: 33px;
+	}
+
+	@include frd.mobile320-d {
+		left: 59px;
+	}
+}

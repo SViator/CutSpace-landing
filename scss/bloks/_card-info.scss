@@ -1,0 +1,50 @@
+.card-info {
+	max-width: 300px;
+	height: 141px;
+	padding: 33px 29px 32px;
+
+	display: flex;
+	align-items: center;
+
+	border-radius: 15px;
+	background-color: #fff;
+	box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+
+	@include frd.desktop1024-d {
+		max-width: 260px;
+		height: 120px;
+		padding: 20px 15px;
+	}
+
+	@include frd.tablet768-d {
+		padding: 0 10px;
+		height: 95px;
+	}
+}
+
+.card-info__icon {
+	width: 61px;
+	margin: 0 20px 0 1px;
+}
+
+.card-info__text {
+	p {
+		line-height: 26px;
+		letter-spacing: 1.13px;
+
+		@include frd.desktop1024-d {
+			letter-spacing: 0.5px;
+		}
+
+		@include frd.tablet768-d {
+			font-size: 14px;
+			line-height: 1.2;
+		}
+	}
+}
+
+.card-info__title {
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 0.8px;
+}

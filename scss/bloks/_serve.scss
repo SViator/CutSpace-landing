@@ -1,0 +1,49 @@
+.serve {
+	position: relative;
+	padding-top: 72px;
+	padding-bottom: 56px;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 704px;
+		background-color: #F5F6FA;
+
+		position: absolute;
+		top: -305px;
+		z-index: -1;
+
+	}
+
+	@include frd.desktop1280-d {
+		padding: 45px 0;
+	}
+
+	@include frd.tablet768-d {
+		padding: 30px 0;
+	}
+}
+
+.serve__heading {
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+.heading__p {
+	margin-bottom: 15px;
+}
+
+.serve__title {
+	margin-bottom: 10px;
+}
+
+.serve__card-row {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+
+	@include frd.tablet768-d {
+		flex-direction: column;
+	}
+}
